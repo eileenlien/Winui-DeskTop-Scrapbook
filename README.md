@@ -1,6 +1,7 @@
-# ClipBorad(Scrapbook) - Clipboard on WinUI3 #
+# Clipboard #
 
-## Build Enviroment for WinUI3 ##
+## Clipboard on WinUI3 ##
+### Build Enviroment for WinUI3 ###
 - Steps:
     1. 確定您的開發電腦已安裝 Windows 10 1803 (組建 17134) 或較新版本
     2. 安裝 Visual Studio 2019 (16.7.2 版本)， 安裝 Visual Studio 時，您必須包含下列選項:
@@ -19,30 +20,99 @@
 
     - UWP: https://docs.microsoft.com/zh-tw/windows/apps/winui/winui3/get-started-winui3-for-uwp
 
-### Reference ### 
+#### Reference #### 
 https://docs.microsoft.com/zh-tw/windows/apps/winui/winui3/
 
-## Notice ##
-- Desktop 與 uwp 語法與套件極為相似，但是兩方的功能**不能全部互通**以及**操作方法也會有變化**
+### How to Run the code? ###
+1. Download the file from git
+2. Clean and Rebuild the solution
+3. Run the Code 
+    * the Debug(follow the implement Debug as follow.) 
+    * Or Press the windows(one the bottom of computer)![](https://i.imgur.com/Dczca4V.png) and press your applicateion.![](https://i.imgur.com/nhU2FBW.png)
+
+
+ 
+#### Implement Debug ####
+1. Please go to [Debug] > [ {YourProjectname} (Package) Debug Properties] > go Debugger type select Application process to [Native Only] > Save (use control+S) 
+2. [Debug] > [Start Debugging]
+![](https://i.imgur.com/33uBcIO.png)
+
+### Preface ###
+- Desktop 與 UWP 語法與套件極為相似，但是兩方的功能**不能全部互通**以及**操作方法也會有變化**
 - 會在下面章節針對遇到的問題進行說明。
-
-
-## Text part ##
+### Text part ###
 - How to start:
-    - use the [Copy and paste](https://docs.microsoft.com/en-us/windows/uwp/app-to-app/copy-and-paste) and build the simple Clipboard for text.
+    - use the [Copy and paste](https://docs.microsoft.com/en-us/windows/uwp/app-to-app/copy-and-paste) sample code and build the simple Clipboard for text.
     - 引入 Windows.ApplicationModel.DataTransfer 來操作剪貼簿的功能，此功能在UWP與Desktop上接可互通。
+- Example C# code for simple copy and paste text in desktop.
 
-## Image part ##
-- 範例程式碼(For Desktop)
+```=C#
+/* the copy part */
+DataPackage dataPackage = new DataPackage();
+//copy 
+dataPackage.RequestedOperation = DataPackageOperation.Copy;
+// or cut
+dataPackage.RequestedOperation = DataPackageOperation.Move;
+
+//the TextBox selected area
+if (TextBox.SelectedText.Length > 0)
+{
+    dataPackage.SetText(TextBox.SelectedText);
+    Clipboard.SetContent(dataPackage);
+}
+
+/* the paste part */
+DataPackageView dataPackageView = Clipboard.GetContent();
+if (dataPackageView.Contains(StandardDataFormats.Text))
+{
+    string text = await dataPackageView.GetTextAsync();
+    Debug.WriteLine(text);
+}
+else{
+    Debug.WriteLine("Error!Text format is not available in clipboard.") ;
+}
+```
+### Image part ###
+- 由於無法使用openfileDialog或是openfilepicker，故使用Windows.Storage.StorageFile來解決挑選圖片的問題，下面為簡單的範例程式碼。
 
 
-### Problems ###
+- Example C# code for simple copy and paste image in desktop.
+
+``` =C#
+//path is a string of the file location
+StorageFile file = await StorageFile.GetFileFromPathAsync(path);
+dataPackage.SetBitmap(RandomAccessStreamReference.CreateFromFile(file));
+Clipboard.SetContent(dataPackage);
+var dataPackageView = Clipboard.GetContent();
+if (dataPackageView.Contains(StandardDataFormats.Bitmap))
+{
+    RandomAccessStreamReference imageReceived = null;
+    imageReceived = await dataPackageView.GetBitmapAsync();
+    using (var imageStream = await imageReceived.OpenReadAsync())
+    {
+        var bitmapImage = new BitmapImage();
+        bitmapImage.SetSource(imageStream);
+        //Image is the ui element
+        Image.Source = bitmapImage;
+        Image.Visibility = Visibility.Visible;
+    }
+}
+```
+
+
+#### some special problems ####
 
 1. File Open Picker work in uwp but not work in desktop
     - [FileOpenPicker](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Pickers.FileOpenPicker?view=winrt-19041) dose not work on desktop
+        - FileOpenPicker **is a UWP function**, not applicable to win32 applications.Please use OpenFileDialog from [Reference is here](https://docs.microsoft.com/en-us/answers/questions/26394/using-uwps-fileopenpicker-in-a-wpf-app-fails.html).
+
     - OpenFileDialog can not find in desktop
         - [Microsoft.Win32.OpenFileDialog](https://docs.microsoft.com/en-us/dotnet/api/microsoft.win32.openfiledialog?view=netcore-3.1) does not work
         - [System.Windows.Forms.OpenFileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.openfiledialog?view=netcore-3.1) does not work
-    - MyOwnSolution: Use [Windows.Storage.StorageFile](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.StorageFile?view=winrt-19041) to get the files in Customalize UI.
+    - **MySolution**: Use [Windows.Storage.StorageFile](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.StorageFile?view=winrt-19041) to get the files in Customalize UI and make UI by ourselves.
 
-### Navigation Page ###
+2. Access violation reading location
+    - open the Access in your app
+        - Go to [Package.appxmanifest] > [Capabilities] > Select [Pictures Library] 
+    - Or use Native Only mode to debug which is mentioned above.
+
