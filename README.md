@@ -1,7 +1,6 @@
-# ClipBorad(Scrapbook) #
+# ClipBorad(Scrapbook) - Clipboard on WinUI3 #
 
-## Clipboard on WinUI3 ##
-### Build Enviroment for WinUI3 ###
+## Build Enviroment for WinUI3 ##
 - Steps:
     1. 確定您的開發電腦已安裝 Windows 10 1803 (組建 17134) 或較新版本
     2. 安裝 Visual Studio 2019 (16.7.2 版本)， 安裝 Visual Studio 時，您必須包含下列選項:
@@ -20,24 +19,24 @@
 
     - UWP: https://docs.microsoft.com/zh-tw/windows/apps/winui/winui3/get-started-winui3-for-uwp
 
-#### Reference #### 
+### Reference ### 
 https://docs.microsoft.com/zh-tw/windows/apps/winui/winui3/
 
-### Notice ###
+## Notice ##
 - Desktop 與 uwp 語法與套件極為相似，但是兩方的功能**不能全部互通**以及**操作方法也會有變化**
 - 會在下面章節針對遇到的問題進行說明。
 
 
-### Text part ###
+## Text part ##
 - How to start:
     - use the [Copy and paste](https://docs.microsoft.com/en-us/windows/uwp/app-to-app/copy-and-paste) and build the simple Clipboard for text.
     - 引入 Windows.ApplicationModel.DataTransfer 來操作剪貼簿的功能，此功能在UWP與Desktop上接可互通。
 
-### Image part ###
+## Image part ##
 - 範例程式碼(For Desktop)
 
 
-#### Problems ####
+### Problems ###
 
 1. File Open Picker work in uwp but not work in desktop
     - [FileOpenPicker](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Pickers.FileOpenPicker?view=winrt-19041) dose not work on desktop
