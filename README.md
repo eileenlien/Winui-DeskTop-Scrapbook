@@ -28,7 +28,7 @@ https://docs.microsoft.com/zh-tw/windows/apps/winui/winui3/
 2. Clean and Rebuild the solution
 3. Run the Code 
     * the Debug(follow the implement Debug as follow.) 
-    * Or Press the windows(one the bottom of computer) and press your applicateion.
+    * Or Press the windows(one the bottom of computer) and press your applicateion.      
       ![](https://i.imgur.com/nhU2FBW.png)
 
 
