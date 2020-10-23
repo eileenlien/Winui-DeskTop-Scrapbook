@@ -35,7 +35,9 @@ https://docs.microsoft.com/zh-tw/windows/apps/winui/winui3/
 #### Implement Debug ####
 1. Please go to [Debug] > [ {YourProjectname} (Package) Debug Properties] > go Debugger type select Application process to [Native Only] > Save (use control+S) 
 2. [Debug] > [Start Debugging]
-    - ![](https://i.imgur.com/33uBcIO.png)
+
+
+![](https://i.imgur.com/33uBcIO.png)
 
 ### Preface ###
 - Desktop 與 UWP 語法與套件極為相似，但是兩方的功能**不能全部互通**以及**操作方法也會有變化**
