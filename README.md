@@ -35,6 +35,7 @@ https://docs.microsoft.com/zh-tw/windows/apps/winui/winui3/
 #### Implement Debug ####
 1. Please go to [Debug] > [ {YourProjectname} (Package) Debug Properties] > go Debugger type select Application process to [Native Only] > Save (use control+S) 
 2. [Debug] > [Start Debugging]
+
 ![](https://i.imgur.com/33uBcIO.png)
 
 ### Preface ###
