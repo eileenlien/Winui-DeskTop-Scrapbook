@@ -1,0 +1,2 @@
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook (Package)\ScrapBook (Package).wapproj;x64
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\ScrapBook.csproj;x64
