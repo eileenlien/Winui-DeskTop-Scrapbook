@@ -1,2 +1,0 @@
-C:\Users\User\source\From home\ScrapBook7\ScrapBook7 (Package)\ScrapBook7 (Package).wapproj;x64
-C:\Users\User\source\From home\ScrapBook7\ScrapBook7\ScrapBook7.csproj;x64

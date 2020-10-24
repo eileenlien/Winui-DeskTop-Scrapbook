@@ -1,0 +1,105 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\MyFile\\Program\\WinUI_DeskTOP\\ScrapBook\\ScrapBook\\ScrapBook.csproj": {}
+  },
+  "projects": {
+    "C:\\MyFile\\Program\\WinUI_DeskTOP\\ScrapBook\\ScrapBook\\ScrapBook.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MyFile\\Program\\WinUI_DeskTOP\\ScrapBook\\ScrapBook\\ScrapBook.csproj",
+        "projectName": "ScrapBook",
+        "projectPath": "C:\\MyFile\\Program\\WinUI_DeskTOP\\ScrapBook\\ScrapBook\\ScrapBook.csproj",
+        "packagesPath": "C:\\Users\\m1060\\.nuget\\packages\\",
+        "outputPath": "C:\\MyFile\\Program\\WinUI_DeskTOP\\ScrapBook\\ScrapBook\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\m1060\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "dependencies": {
+            "Microsoft.VCRTForwarders.140": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
+            "Microsoft.WinUI": {
+              "target": "Package",
+              "version": "[3.0.0-preview2.200713.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[5.0.0-preview.5.20279.2, 5.0.0-preview.5.20279.2]"
+            },
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+              "version": "[5.0.0-preview.5.20279.2, 5.0.0-preview.5.20279.2]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[5.0.0-preview.5.20278.1, 5.0.0-preview.5.20278.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x86",
+              "version": "[5.0.0-preview.5.20278.1, 5.0.0-preview.5.20278.1]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[5.0.0-preview.5.20278.3, 5.0.0-preview.5.20278.3]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+              "version": "[5.0.0-preview.5.20278.3, 5.0.0-preview.5.20278.3]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.100-preview.5.20279.10\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

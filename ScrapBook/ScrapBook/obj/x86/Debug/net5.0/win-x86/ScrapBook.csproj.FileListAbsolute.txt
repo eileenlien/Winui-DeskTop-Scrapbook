@@ -1,0 +1,15 @@
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\ScrapBook.csprojAssemblyReference.cache
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\App.g.i.cs
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\App.g.cs
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\MainWindow.g.i.cs
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\MainWindow.g.cs
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\TextCopyPage.g.i.cs
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\TextCopyPage.g.cs
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\XamlTypeInfo.g.cs
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\App.xaml
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\MainWindow.xaml
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\TextCopyPage.xaml
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\App.xbf
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\MainWindow.xbf
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\TextCopyPage.xbf
+C:\MyFile\Program\WinUI_DeskTOP\ScrapBook\ScrapBook\obj\x86\Debug\net5.0\win-x86\XamlSaveStateFile.xml

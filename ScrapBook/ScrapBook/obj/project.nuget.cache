@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "znavIha/YBbiL6gDuREBTiBJM9Z0L9lLoy67L57PtRgT5gkOOZWm6ldj5hB6Ykw4XuRC2Bahi52PXAT3ItpypA==",
+  "success": true,
+  "projectFilePath": "C:\\MyFile\\Program\\WinUI_DeskTOP\\ScrapBook\\ScrapBook\\ScrapBook.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\m1060\\.nuget\\packages\\microsoft.vcrtforwarders.140\\1.0.6\\microsoft.vcrtforwarders.140.1.0.6.nupkg.sha512",
+    "C:\\Users\\m1060\\.nuget\\packages\\microsoft.windows.cswinrt\\0.1.0-prerelease.200629.3\\microsoft.windows.cswinrt.0.1.0-prerelease.200629.3.nupkg.sha512",
+    "C:\\Users\\m1060\\.nuget\\packages\\microsoft.windows.sdk.net\\10.0.18362.6-preview\\microsoft.windows.sdk.net.10.0.18362.6-preview.nupkg.sha512",
+    "C:\\Users\\m1060\\.nuget\\packages\\microsoft.winui\\3.0.0-preview2.200713.0\\microsoft.winui.3.0.0-preview2.200713.0.nupkg.sha512",
+    "C:\\Users\\m1060\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\5.0.0-preview.5.20278.3\\microsoft.windowsdesktop.app.runtime.win-x86.5.0.0-preview.5.20278.3.nupkg.sha512",
+    "C:\\Users\\m1060\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.0-preview.5.20278.3\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.0-preview.5.20278.3.nupkg.sha512",
+    "C:\\Users\\m1060\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.0-preview.5.20278.1\\microsoft.netcore.app.runtime.win-x64.5.0.0-preview.5.20278.1.nupkg.sha512",
+    "C:\\Users\\m1060\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.0-preview.5.20279.2\\microsoft.aspnetcore.app.runtime.win-x64.5.0.0-preview.5.20279.2.nupkg.sha512",
+    "C:\\Users\\m1060\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\5.0.0-preview.5.20278.1\\microsoft.netcore.app.runtime.win-x86.5.0.0-preview.5.20278.1.nupkg.sha512",
+    "C:\\Users\\m1060\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\5.0.0-preview.5.20279.2\\microsoft.aspnetcore.app.runtime.win-x86.5.0.0-preview.5.20279.2.nupkg.sha512"
+  ],
+  "logs": []
+}

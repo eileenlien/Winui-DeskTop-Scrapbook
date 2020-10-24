@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="ScrapBook" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="ScrapBook">
+				<NamedResource name="App.xbf" uri="ms-resource://ScrapBook/Files/ScrapBook/App.xbf">
+					<Candidate type="Path">
+						<Value>ScrapBook\App.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ImageCopyPage.xbf" uri="ms-resource://ScrapBook/Files/ScrapBook/ImageCopyPage.xbf">
+					<Candidate type="Path">
+						<Value>ScrapBook\ImageCopyPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ImageSelectorPage.xbf" uri="ms-resource://ScrapBook/Files/ScrapBook/ImageSelectorPage.xbf">
+					<Candidate type="Path">
+						<Value>ScrapBook\ImageSelectorPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MainWindow.xbf" uri="ms-resource://ScrapBook/Files/ScrapBook/MainWindow.xbf">
+					<Candidate type="Path">
+						<Value>ScrapBook\MainWindow.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextCopyPage.xbf" uri="ms-resource://ScrapBook/Files/ScrapBook/TextCopyPage.xbf">
+					<Candidate type="Path">
+						<Value>ScrapBook\TextCopyPage.xbf</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
